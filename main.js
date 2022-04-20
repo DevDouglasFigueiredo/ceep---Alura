@@ -14,14 +14,20 @@ function criarTarefa  (evento) {
     const tarefa = document.createElement('li')
     tarefa.classList.add('task')
     const conteudo = `<p class = "content">${valor}</p>`;
+    if(valor !== ""){
 
-    tarefa.innerHTML = conteudo;
+        tarefa.innerHTML = conteudo;
 
-    tarefa.appendChild(botaoCumprirTarefa())
-    tarefa.appendChild(botaoDeletarTarefa())
-    lista.appendChild(tarefa);
+        tarefa.appendChild(botaoCumprirTarefa())
+        tarefa.appendChild(botaoDeletarTarefa())
+        lista.appendChild(tarefa);
+    
+        input.value = ""
+    } else {
+        window.alert("você deve digitar uma tarefa!")
+    }
 
-    input.value = ""
+   
 }
 
 
