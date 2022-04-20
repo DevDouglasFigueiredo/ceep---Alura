@@ -1,6 +1,6 @@
 const novaTarefa = document.querySelector('[data-form-button]');
 
-novaTarefa.addEventListener('click', criarTarefa);
+novaTarefa.addEventListener('click', criarTarefa)
 
 
 function criarTarefa  (evento) {
@@ -21,8 +21,7 @@ function criarTarefa  (evento) {
     tarefa.appendChild(botaoDeletarTarefa())
     lista.appendChild(tarefa);
 
-    input.value = " ";
-
+    input.value = ""
 }
 
 
@@ -63,3 +62,4 @@ function deletarTarefa (evento){
     tarefaCompleta.remove();
     
 }
+

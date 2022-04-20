@@ -19,6 +19,30 @@ body {
   min-height: 300px;
 }
 
+@media screen and (max-width: 465px){
+      .form-input{
+        width: 45px;
+        height: 10px;
+        max-width: 250px;
+        
+      }
+
+      .form-button{
+        height: 38px;
+        display: flex;
+        align-items: center;
+        
+      }
+      .title{
+        text-align: center;
+      }
+      .todo-list{
+        box-sizing: border-box;
+        width: 250px;
+        
+      }
+}
+
 .form {
   display: flex;
   justify-content: center;
