@@ -24,7 +24,7 @@ function criarTarefa  (evento) {
     
         input.value = ""
     } else {
-        window.alert("você deve digitar uma tarefa!")
+        window.alert("você deve digitar uma tarefa antes!")
     }
 
    
